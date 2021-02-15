@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import BingoGame from './components/BingoGame.js';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <div>
+    <BingoGame/>
+    </div>
+    </React.StrictMode>,
   document.getElementById('root')
 );
 
