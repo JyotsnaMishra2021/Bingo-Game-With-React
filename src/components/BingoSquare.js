@@ -6,7 +6,7 @@ var newArray = Array(5).fill('N').map(row => new Array(5).fill('N'));
 var totalrows = 5;
 
 var disablearray = [];
-var disablearrayList = [];
+
 newArray[2][2] = "Y";
 var buttondisabled = false;
 
@@ -47,7 +47,7 @@ class BingoSquare extends Component {
             rowFlag = true;
             for ( j = 1; j <= 5; j++) {
                 disablearray[j - 1] = row + "_" + col;
-                if (matrix[j - 1][col - 1] != 'Y') {
+                if (matrix[j - 1][col - 1] !=='Y') {
                     disablearray = [];
                     rowFlag = false;
                     break;
