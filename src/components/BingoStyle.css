@@ -3,6 +3,39 @@
     left:40%;
    margin-left: 20%;
 }
+.startButtonDiv{
+    width: 30%;
+  padding-left: 35%;
+}
+.startButton{
+    
+    
+    background: #fff;
+    border: 1px solid #999;
+    font-size: 70%;
+    /* float: left; */
+    font-weight: bold;
+    margin-right: 1px;
+    margin-top: -2px;
+    padding: 0;
+    text-align: center;
+    /* width: 15%; */
+    /* line-height: 15px; */
+    height: 40px;
+     /* text-decoration: none; */
+    color: rgb(235, 229, 229);
+    /* font-weight: bold; */
+    background-color: #14d484;
+    margin: 4px;
+    border: 1px solid #2b638f;
+    background-image: linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(73,132,180) 0%, rgb(97,155,203) 100%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #031422), color-stop(1, #2b638f) );
+    border-radius: 10px;
+    text-shadow: 0px -1px 0px rgb(0 0 0 / 50%);
+    box-shadow: 0px 6px 0px #2b0404, 0px 3px 15px #061a2b, inset 0px 1px 0px rgb(255 255 255 / 30%), inset 0px 0px 3px rgb(255 255 255 / 50%);
+
+}
 .square-button-disabled{
     pointer-events: none;
     background: #fff;
@@ -15,9 +48,9 @@
     padding: 0;
     text-align: center;
     width: 15%;
-    line-height: 30px;
+    line-height: 15px;
     height: 80px;
-    display: inline-block;
+   /* display: inline-block;*/
     text-decoration: none;
     color: rgb(235, 229, 229);
     font-weight: bold;
@@ -43,9 +76,9 @@
     padding: 0;
     text-align: center;
     width: 15%;
-    line-height: 30px;
+    line-height: 15px;
     height: 80px;
-    display: inline-block;
+   
        color: rgb(235, 229, 229);
       font-weight: bold;
       background-color: #14d484;
@@ -84,9 +117,9 @@
     padding: 0;
     text-align: center;
     width: 15%;
-    line-height: 30px;
+    line-height: 15px;
     height: 80px;
-    display: inline-block;
+    
       text-decoration: none;
       color: #fff;
       font-weight: bold;
@@ -118,7 +151,7 @@
    .mainclass h1 {
     color: burlywood;
     font-family: Gugi;
-    margin-left: 15%; 
+    /*margin-left: 15%; */
     
 }
    
@@ -153,9 +186,9 @@
             padding: 0;
             text-align: center;
             width: 15%;
-            line-height: 30px;
+            line-height: 15px;
             height: 80px;
-            display: inline-block;
+            
             text-decoration: none;
             color: #737070;
             font-weight: bold;

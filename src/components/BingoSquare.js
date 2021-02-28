@@ -1,12 +1,10 @@
-import React, { Component, useState } from 'react';
+import React, { Component} from 'react';
 import './BingoStyle.css';
-import BingoGame from './BingoGame.js';
-import { render } from '@testing-library/react';
-import update from 'immutability-helper';
+
 
 var newArray = Array(5).fill('N').map(row => new Array(5).fill('N'));
 var totalrows = 5;
-var rend = 1;
+
 var disablearray = [];
 var disablearrayList = [];
 newArray[2][2] = "Y";
@@ -37,7 +35,7 @@ class BingoSquare extends Component {
         var rowFlag = true;
         for (var j = 1; j <= 5; j++) {
             disablearray[j - 1] = row + "_" + col;
-            if (matrix[row - 1][j - 1] != 'Y') {
+            if (matrix[row - 1][j - 1] !== 'Y') {
                 rowFlag = false;
                 disablearray = [];
                 break;
@@ -47,7 +45,7 @@ class BingoSquare extends Component {
         if (!rowFlag) {
 
             rowFlag = true;
-            for (var j = 1; j <= 5; j++) {
+            for ( j = 1; j <= 5; j++) {
                 disablearray[j - 1] = row + "_" + col;
                 if (matrix[j - 1][col - 1] != 'Y') {
                     disablearray = [];
@@ -61,26 +59,26 @@ class BingoSquare extends Component {
 
             rowFlag = true;
             if (row === col) {
-                for (var j = 1; j <= 5; j++) {
+                for ( j = 1; j <= 5; j++) {
                     disablearray[j - 1] = row + "_" + col;
                     if (j === 3)
                         matrix[2][2] = "Y";
-                    if (matrix[j - 1][j - 1] != 'Y') {
+                    if (matrix[j - 1][j - 1] !== 'Y') {
                         disablearray = [];
                         rowFlag = false;
                         break;
                     }
                 }
             }
-            else if (col !== row && (n == totalrow)) {
+            else if (col !== row && (n === totalrow)) {
 
                 rowFlag = true;
-                for (var j = 1; j <= 5; j++) {
+                for ( j = 1; j <= 5; j++) {
                     let col1 = parseInt(totalrow) - parseInt(j) + 1
                     disablearray[j - 1] = row + "_" + col;
                     if (j === 3)
                         matrix[2][2] = "Y";
-                    if (matrix[j - 1][col1 - 1] != 'Y') {
+                    if (matrix[j - 1][col1 - 1] !== 'Y') {
                         disablearray = [];
                         rowFlag = false;
                         break;
@@ -122,9 +120,7 @@ class BingoSquare extends Component {
                 after: "after"
             })
             if (disablearray.length > 0) {
-                disablearrayList = disablearray.slice();
-
-                buttondisabled = true
+                 buttondisabled = true
 
             }
 
@@ -144,7 +140,7 @@ class BingoSquare extends Component {
                     <div className={this.state.after}></div>
                 </div>
 
-                {this.props.id == '3_3' ? (
+                {this.props.id === '3_3' ? (
                     <button value={this.props.value} name={this.props.value} id={this.props.id} className="square-button-disabled"  > {this.props.name} </button>
                 ) : (
 
